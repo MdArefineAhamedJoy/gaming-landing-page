@@ -5,6 +5,7 @@ import GameStoreCard from '../GameStoreCard/GameStoreCard';
 import Sponsored from '../Sponsored/Sponsored';
 import Publications from '../Publications/Publications';
 import Contact from '../Contact/Contact';
+import Features from '../Features/Features';
 
 
 
@@ -17,6 +18,7 @@ const Home = () => {
            <Sponsored></Sponsored>
            <Publications></Publications>
            <Contact></Contact>
+           <Features></Features>
         </div>
     );
 };
