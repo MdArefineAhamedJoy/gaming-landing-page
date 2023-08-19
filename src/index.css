@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.banner-img {
+    background-image: url("https://i.ibb.co/fx5sqDj/planet-alpha-3-1130x636.jpg");
+}
