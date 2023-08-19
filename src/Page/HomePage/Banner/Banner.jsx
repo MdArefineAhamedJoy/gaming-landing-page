@@ -3,7 +3,7 @@ import React from "react";
 const Banner = () => {
   return (
     <div className="banner-img h-screen w-full text-white flex justify-center items-center">
-      <div className="md:w-9/12 w-11/12">
+      <div className="md:w-10/12 w-11/12">
         <h1 className="md:text-6xl text-3xl font-bold ">Black Mesa</h1>
         <p className="text-xl my-7">
           “Have beginning wherein spirit. Bearing unto. To after light. Good
