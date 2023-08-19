@@ -11,7 +11,7 @@ const Publications = () => {
   }, []);
   return (
     <div className="mt-32 text-white w-10/12 mx-auto">
-      <div className="flex justify-between mb-20">
+      <div className="flex justify-between items-center mb-16">
         <h2 className="text-3xl font-semibold capitalize ">
           Recent publications
         </h2>
@@ -31,9 +31,9 @@ const Publications = () => {
             </div>
             <div className="w-8/12 px-3">
               <h2 className="text-2xl mt-4 font-semibold">{game?.name}</h2>
-              <p className="mt-4 mb-7">{game?.publicationDate}</p>
-              <p className="">{game?.details}</p>
-              <button className="uppercase mt-9 flex items-center gap-2 ">
+              <p className="mt-4 mb-6">{game?.publicationDate}</p>
+              <p className="leading-7 text-lg">{game?.details}</p>
+              <button className="uppercase mt-5  flex items-center gap-2 ">
                 read more <BsFillArrowRightCircleFill />
               </button>
             </div>

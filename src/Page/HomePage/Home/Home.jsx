@@ -4,6 +4,7 @@ import Banner from '../Banner/Banner';
 import GameStoreCard from '../GameStoreCard/GameStoreCard';
 import Sponsored from '../Sponsored/Sponsored';
 import Publications from '../Publications/Publications';
+import Contact from '../Contact/Contact';
 
 
 
@@ -15,6 +16,7 @@ const Home = () => {
            <GameStoreCard></GameStoreCard>
            <Sponsored></Sponsored>
            <Publications></Publications>
+           <Contact></Contact>
         </div>
     );
 };
