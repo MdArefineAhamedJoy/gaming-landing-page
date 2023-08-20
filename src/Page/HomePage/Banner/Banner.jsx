@@ -14,7 +14,7 @@ const Banner = () => {
       });
   }, []);
   return (
-    <div className="relative">
+    <div className="relative mb-60">
       <div className="banner-img h-screen w-full text-white flex justify-center items-center">
         <div className="md:w-10/12 w-11/12">
           <h1 className="md:text-6xl text-3xl font-bold ">Black Mesa</h1>
@@ -46,7 +46,7 @@ const Banner = () => {
             {sliders.map((game) => (
               <SwiperSlide className="px-2 text-white" key={game?.id}>
                 {" "}
-                <img className="w-full rounded-md"  src={game?.gameImage} alt="" />
+                <img className="w-full rounded-md h-52"  src={game?.gameImage} alt="" />
               </SwiperSlide>
             ))}
           </div>

@@ -24,14 +24,24 @@ const GameStoreCard = () => {
       </div>
       <div className="grid md:grid-cols-3 gap-4 mt-20">
         {games.map((game) => (
-          <div key={game.id}>
-            <div className="h-48 w-80">
-              <img className="rounded h-full w-full" src={game.gameImage} alt="" />
+          <div key={game.id} className="group relative ">
+            <div className="h-48 w-80 relative">
+              <img
+                className="rounded h-full w-full "
+                src={game.gameImage}
+                alt=""
+              />
+              <p className=" absolute bottom-0 left-4">{game.rating}</p>
             </div>
-            <div>
-                <p>{game.rating}</p>
-                <p>{game.model}</p>
-                <p>{game.price}</p>
+            <div className="mt-2">
+              <p className="font-semibold text-xl mt-3 mb-1">{game.model}</p>
+              <div>
+                <p className="group-hover:hidden duration-300">{game.price}</p>
+                <button className="relative hidden group duration-300 group-hover:block text-center text-md group overflow-hidden uppercase">
+                  add to cart
+                  <span className="absolute inset-x-0 bottom-0 h-1 bg-pink-500 transform transition-transform duration-500 translate-x-[-110%] group-hover:translate-x-0"></span>
+                </button>
+              </div>
             </div>
           </div>
         ))}

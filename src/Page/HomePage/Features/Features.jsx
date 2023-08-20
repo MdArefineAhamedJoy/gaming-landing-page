@@ -24,15 +24,25 @@ const Features = () => {
       </div>
       <div className="grid md:grid-cols-3">
         {features.map((feature) => (
-          <div key={feature?.id} className="border  mx-2 py-20 px-10 text-center rounded-md">
+          <div
+            key={feature?.id}
+            className="border  mx-2 py-20 px-10 text-center rounded-md"
+          >
             <div>
-              <img className="bg-transparent mx-auto w-20 h-20 rounded-md" src={feature?.image} alt="" />
+              <img
+                className="bg-transparent mx-auto w-20 h-20 rounded-md"
+                src={feature?.image}
+                alt=""
+              />
             </div>
             <div>
-              <h2 className="text-xl font-semibold pt-8 mb-5">{feature?.title}</h2>
+              <h2 className="text-xl font-semibold pt-8 mb-5">
+                {feature?.title}
+              </h2>
               <p className="text-lg mb-7">{feature?.subTitle}</p>
-              <button className="uppercase text-center">
+              <button class="relative text-center text-md group overflow-hidden uppercase ">
                 view more
+                <span class="absolute inset-x-0 bottom-0 h-1 bg-pink-500 transform transition-transform duration-500 translate-x-[-110%] group-hover:translate-x-0"></span>
               </button>
             </div>
           </div>
