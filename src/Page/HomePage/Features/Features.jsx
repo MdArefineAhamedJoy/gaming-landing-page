@@ -10,7 +10,7 @@ const Features = () => {
       });
   }, []);
   return (
-    <div className="text-white mt-32 text-center w-10/12 mx-auto pb-32">
+    <div className="text-white mt-32 text-center w-10/12 mx-auto ">
       <div className="mb-16">
         <small className="uppercase text-center  bg-[#d31c3e] py-1 font-bold rounded-ss-lg rounded-ee-xl rounded px-4">
           FEATURES

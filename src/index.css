@@ -3,9 +3,17 @@
 @tailwind utilities;
 
 .banner-img {
-    background-image: url("https://i.ibb.co/fx5sqDj/planet-alpha-3-1130x636.jpg");
+  background-image: url("https://i.ibb.co/fx5sqDj/planet-alpha-3-1130x636.jpg");
 }
 
-.sponsored_bg{
-    background-image: url("https://i.ibb.co/Y7kKwDf/52991634281-aea6b68e49-h.jpg");
+.sponsored_bg {
+  background-image: url("https://i.ibb.co/Y7kKwDf/52991634281-aea6b68e49-h.jpg");
+}
+
+.footer_banner_bg {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTezu1mmopiL8CxieU6OSgovlbYc1mBGpaIPj_tJlJMuT3VyV9P");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 378px;
+  width: 100%;
 }

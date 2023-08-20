@@ -6,6 +6,8 @@ import Sponsored from '../Sponsored/Sponsored';
 import Publications from '../Publications/Publications';
 import Contact from '../Contact/Contact';
 import Features from '../Features/Features';
+import FooterBanner from '../FooterBanner/FooterBanner';
+import Footer from '../../Sheard/Footer';
 
 
 
@@ -19,6 +21,8 @@ const Home = () => {
            <Publications></Publications>
            <Contact></Contact>
            <Features></Features>
+           <FooterBanner></FooterBanner>
+           <Footer></Footer>
         </div>
     );
 };
