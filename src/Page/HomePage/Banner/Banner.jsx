@@ -44,9 +44,10 @@ const Banner = () => {
         >
           <div className="px-5">
             {sliders.map((game) => (
-              <SwiperSlide className="px-2 text-white" key={game?.id}>
+              <SwiperSlide className="px-2 text-white group " key={game?.id}>
                 {" "}
                 <img className="w-full rounded-md h-52"  src={game?.gameImage} alt="" />
+                <p className="hidden group-hover:block absolute bottom-0 text-lg font-semibold">{game?.model}</p>
               </SwiperSlide>
             ))}
           </div>

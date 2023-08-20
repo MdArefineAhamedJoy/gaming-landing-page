@@ -26,7 +26,7 @@ const Features = () => {
         {features.map((feature) => (
           <div
             key={feature?.id}
-            className="border  mx-2 py-20 px-10 text-center rounded-md"
+            className="shadow-2xl duration-500  mx-2 py-20 px-10 text-center rounded-md hover:bg-[#2d2a3c]"
           >
             <div>
               <img
