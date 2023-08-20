@@ -39,7 +39,7 @@ const GameStoreCard = () => {
                 <p className="group-hover:hidden duration-300">{game.price}</p>
                 <button className="relative hidden group duration-300 group-hover:block text-center text-md group overflow-hidden uppercase">
                   add to cart
-                  <span className="absolute inset-x-0 bottom-0 h-1 bg-pink-500 transform transition-transform duration-500 translate-x-[-110%] group-hover:translate-x-0"></span>
+                  <span className="absolute inset-x-0 bottom-0 h-1 bg-[#d31c3e] transform transition-transform duration-500 translate-x-[-110%] group-hover:translate-x-0"></span>
                 </button>
               </div>
             </div>

@@ -42,7 +42,7 @@ const Features = () => {
               <p className="text-lg mb-7">{feature?.subTitle}</p>
               <button class="relative text-center text-md group overflow-hidden uppercase ">
                 view more
-                <span class="absolute inset-x-0 bottom-0 h-1 bg-pink-500 transform transition-transform duration-500 translate-x-[-110%] group-hover:translate-x-0"></span>
+                <span class="absolute inset-x-0 bottom-0 h-1 bg-[#d31c3e] transform transition-transform duration-500 translate-x-[-110%] group-hover:translate-x-0"></span>
               </button>
             </div>
           </div>
