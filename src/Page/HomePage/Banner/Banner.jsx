@@ -6,12 +6,22 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 const Banner = () => {
   const [sliders, setSliders] = useState([]);
+  const [responsiveWith, setResponsiveWith] = useState(window.innerWidth);
   useEffect(() => {
     fetch("bannerslider.json")
       .then((response) => response.json())
       .then((result) => {
         setSliders(result);
       });
+  }, []);
+  useEffect(() => {
+    const handleResize = () => {
+      setResponsiveWith(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
   return (
     <div className="relative mb-60">
@@ -31,26 +41,27 @@ const Banner = () => {
           </button>
         </div>
       </div>
-      <div className="text-white md:w-10/12 w-full absolute md:bottom-[-120px] bottom-[-20px] md:start-[90px]">
+      <div className="text-white md:w-10/12 w-full absolute md:bottom-[-20%] bottom-[-10%] md:start-[90px]">
         <Swiper
-          slidesPerView={3}
+          slidesPerView={responsiveWith >= 576 ? 3 : 1}
           cssMode={true}
           navigation={true}
           pagination={true}
           mousewheel={true}
           keyboard={true}
-          modules={[Navigation]}
-    
         >
-          <div className="px-5">
-            {sliders.map((game) => (
-              <SwiperSlide className="px-2 text-white group " key={game?.id}>
-                {" "}
-                <img className="w-full rounded-md h-52"  src={game?.gameImage} alt="" />
-                <p className="hidden group-hover:block absolute bottom-0 text-lg font-semibold">{game?.model}</p>
-              </SwiperSlide>
-            ))}
-          </div>
+          {sliders.map((game) => (
+            <SwiperSlide className="px-2 text-white group" key={game?.id}>
+              <img
+                className="w-full rounded-md h-52"
+                src={game?.gameImage}
+                alt=""
+              />
+              <p className="hidden group-hover:block absolute bottom-0 text-lg font-semibold">
+                {game?.model}
+              </p>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>

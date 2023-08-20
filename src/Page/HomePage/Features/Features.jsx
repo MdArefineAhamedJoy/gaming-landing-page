@@ -22,7 +22,7 @@ const Features = () => {
           Replenish form wherein form midst. Good from <br /> forth together.
         </p>
       </div>
-      <div className="grid md:grid-cols-3">
+      <div className="grid md:grid-cols-3 md:my-0 my-10">
         {features.map((feature) => (
           <div
             key={feature?.id}
