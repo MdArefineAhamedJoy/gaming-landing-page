@@ -8,6 +8,7 @@ import Contact from '../Contact/Contact';
 import Features from '../Features/Features';
 import FooterBanner from '../FooterBanner/FooterBanner';
 import Footer from '../../Sheard/Footer';
+import BannerSlider from '../BannerSlider/BannerSlider';
 
 
 
